@@ -1,0 +1,66 @@
+* {
+    border: solid 1px lightblue;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.project-card {
+    max-width: 300px;
+    margin: 8px;
+}
+
+.headshot-card {
+    background-image: url("assets/images/headshot.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.headshot {
+    width: 200px;
+}
+
+.text-4,
+a {
+    color: #555273;
+}
+
+.text-3 {
+    color: #65799b;
+}
+
+.text-2 {
+    color: #b6d5e1;
+}
+
+.text-1 {
+    color: #e2eff1;
+}
+
+.pal-4 {
+    background-color: #555273;
+}
+
+.pal-3 {
+    background-color: #65799b;
+}
+
+.pal-2 {
+    background-color: #b6d5e1;
+}
+
+.pal-1 {
+    background-color: #e2eff1;
+}

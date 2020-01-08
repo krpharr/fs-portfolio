@@ -18,22 +18,16 @@
 <body>
     <div class="navbar-fixed">
         <nav>
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Logo</a>
+            <div class="nav-wrapper white">
+                <a href="#!" class="brand-logo black-text">Kennon Randall Pharr</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">Javascript</a></li>
-                    <li><a href="mobile.html">Mobile</a></li>
+                <ul class="right hide-on-med-and-down black-text">
+                    <li><a class="black-text" href="About.html">About</a></li>
                 </ul>
             </div>
         </nav>
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
     </div>
 
@@ -41,34 +35,43 @@
 
     </header>
 
+    <!-- Image by <a href="https://pixabay.com/users/ElisaRiva-1348268/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2468063">ElisaRiva</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2468063">Pixabay</a> -->
+
+
     <main>
 
+
+        <div class="row project-row">
+            <div class="carousel carousel-slider">
+                <div class="carousel-fixed-item center">
+                    <a class="btn waves-effect white grey-text darken-text-2">button</a>
+                </div>
+                <div class="carousel-item red white-text" href="#one!">
+                    <img src="assets/images/Screen Shot 2020-01-07 at 11.42.42 PM.png">
+                </div>
+                <div class="carousel-item amber white-text" href="#two!">
+                    <h2>Second Panel</h2>
+                    <p class="white-text">This is your second panel</p>
+                </div>
+                <div class="carousel-item green white-text" href="#three!">
+                    <h2>Third Panel</h2>
+                    <p class="white-text">This is your third panel</p>
+                </div>
+                <div class="carousel-item blue white-text" href="#four!">
+                    <h2>Fourth Panel</h2>
+                    <p class="white-text">This is your fourth panel</p>
+                </div>
+            </div>
+        </div>
     </main>
 
 
 
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
+    <footer class="page-footer white black-text">
+        <div class="footer-copyright white black-text">
             <div class="container">
                 © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                <a class="grey-text right" href="#!">More Links</a>
             </div>
         </div>
     </footer>
@@ -78,6 +81,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script src="assets/js/script.js"></script>
+
+    <script>
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: false,
+            indicators: true
+        });
+    </script>
+
 </body>
 
 </html>

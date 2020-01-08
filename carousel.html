@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        
+        .carousel-item {
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: contain;
+        }
+        
+        .carousel-item img {
+            /* width: 200px; */
+            /* margin: 0 16px; */
+        }
+        
+        .carocontainer {
+            margin: 0;
+            flex: 1 0 auto;
+            -webkit-flex: 1 0 auto;
+        }
+        
+        .headshot-card {
+            position: fixed;
+            z-index: 100;
+            top: 4px;
+            left: 4px;
+            background-image: url("assets/images/headshot.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center top;
+            width: 80px;
+            height: 80px;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        
+        .headshot {
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="card headshot-card">
+        <img src="assets/images/headshot.jpg" class="headshot">
+    </div> -->
+
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper black">
+                <a href="#!" class="brand-logo black-text"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down black-text">
+                    <li><a class="black-text" href="About.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+    <div class="row carocontainer">
+        <!-- <div class="col"> -->
+        <div class="carousel carousel-slider center">
+            <div class="carousel-fixed-item center">
+                <a class="btn waves-effect white grey-text darken-text-2">button</a>
+            </div>
+            <div class="carousel-item red white-text" href="#one!">
+                <div style="margin: 80px 0;"></div>
+                <h2>First Panel</h2>
+                <p class="white-text">This is your first panel</p>
+                <img src="assets/images/Screen Shot 2020-01-07 at 11.42.42 PM.png">
+            </div>
+            <div class="carousel-item amber white-text" href="#two!">
+                <h2>Second Panel</h2>
+                <p class="white-text">This is your second panel</p>
+                <img src="assets/images/start.png">
+            </div>
+            <div class="carousel-item green white-text" href="#three!">
+                <h2>Third Panel</h2>
+                <p class="white-text">This is your third panel</p>
+                <img src="assets/images/wd.png">
+            </div>
+
+        </div>
+        <!-- </div> -->
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        // $(document).ready(function() {
+        console.log($(".carocontainer")[0].offsetHeight);
+        // });
+        $('.sidenav').sidenav();
+
+        function initCarousel() {
+            let h = $(".carocontainer")[0].offsetHeight;
+
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true
+            }).height(`${h}px`);
+        }
+
+        $(window).resize(function() {
+            initCarousel();
+
+        });
+
+        initCarousel();
+
+        // $(window).resize();
+    </script>
+
+</body>
+
+</html>

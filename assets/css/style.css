@@ -1,3 +1,7 @@
+* {
+    border: solid 1px lightblue;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -6,4 +10,14 @@ body {
 
 main {
     flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+}
+
+.project-row {
+    width: 951px;
+    height: 596px;
+    margin-top: 80px;
+    /* flex-direction: column;
+    justify-content: center;
+    align-content: flex-end; */
 }
