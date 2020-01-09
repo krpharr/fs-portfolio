@@ -24,7 +24,7 @@
         }
         
         .carousel-item img {
-            /* width: 200px; */
+            width: 304px!important;
             /* margin: 0 16px; */
         }
         
@@ -32,6 +32,15 @@
             margin: 0;
             flex: 1 0 auto;
             -webkit-flex: 1 0 auto;
+            background-image: url("assets/images/bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .description {
+            font-size: 12px!important;
+            padding: 8px;
+            margin: 0;
         }
         
         .headshot-card {
@@ -66,36 +75,62 @@
                 <a href="#!" class="brand-logo black-text"></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down black-text">
-                    <li><a class="black-text" href="About.html">About</a></li>
+                    <li><a class="white-text" target="_blank" href="https://github.com/krpharr">GitHub</a></li>
+                    <li><a class="white-text" target="_blank" href="https://www.linkedin.com/in/kennon-p-064994190/">LinkedIn</a></li>
+                    <li><a class="white-text" href="About.html">About</a></li>
                 </ul>
             </div>
         </nav>
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="about.html">About</a></li>
-        </ul>
     </div>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a class="black-text" target="_blank" href="https://github.com/krpharr">GitHub</a></li>
+        <li><a class="black-text" target="_blank" href="https://www.linkedin.com/in/kennon-p-064994190/">LinkedIn</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
 
     <div class="row carocontainer">
         <!-- <div class="col"> -->
         <div class="carousel carousel-slider center">
-            <div class="carousel-fixed-item center">
+            <!-- <div class="carousel-fixed-item center">
                 <a class="btn waves-effect white grey-text darken-text-2">button</a>
-            </div>
-            <div class="carousel-item red white-text" href="#one!">
-                <div style="margin: 80px 0;"></div>
-                <h2>First Panel</h2>
-                <p class="white-text">This is your first panel</p>
+            </div> -->
+            <div class="carousel-item white-text" href="#one!">
+
+                <h2>Box-Office Depot</h2>
                 <img src="assets/images/Screen Shot 2020-01-07 at 11.42.42 PM.png">
+                <!-- <p class="white-text">Box-Office Depot</p> -->
+                <p class="white-text description">Are you tired of Netflix and Chilling? Browse current top rated movies, coming soon, and now playing to find local showtimes and theaters.</p>
+                <div style="display: flex; justify-content: space-around;">
+                    <a href="https://krpharr.github.io/box-office-depot/">Live App</a>
+                    <a href="https://github.com/krpharr/box-office-depot">GitHub Repository</a>
+                </div>
             </div>
-            <div class="carousel-item amber white-text" href="#two!">
-                <h2>Second Panel</h2>
-                <p class="white-text">This is your second panel</p>
-                <img src="assets/images/start.png">
-            </div>
-            <div class="carousel-item green white-text" href="#three!">
-                <h2>Third Panel</h2>
-                <p class="white-text">This is your third panel</p>
+            <div class="carousel-item white-text" href="#two!">
+                <h2>Weather Dashboard</h2>
                 <img src="assets/images/wd.png">
+                <p class="white-text description">Lookup current conditions and 5-day forcast for any city in the world. Saved searches update currnt conditions every five minutes.</p>
+                <div style="display: flex; justify-content: space-around;">
+                    <a href="https://krpharr.github.io/weather-dashboard/">Live App</a>
+                    <a href="https://github.com/krpharr/weather-dashboard">GitHub Repository</a>
+                </div>
+            </div>
+            <div class="carousel-item white-text" href="#three!">
+                <h2>Code-Shotgun</h2>
+                <img src="assets/images/start.png">
+                <p class="white-text description">Put your full-stack coding knowlegde to the test with Code-Shotgun.</p>
+                <div style="display: flex; justify-content: space-around;">
+                    <a href="https://krpharr.github.io/coding-shotgun/">Live App</a>
+                    <a href="https://github.com/krpharr/coding-shotgun">GitHub Repository</a>
+                </div>
+            </div>
+            <div class="carousel-item white-text" href="#three!">
+                <h2>Pharr Phaster Racing</h2>
+                <img src="assets/images/pharr-phaster-racing.png">
+                <p class="white-text description">Because my dad's race car needs a website.</p>
+                <div style="display: flex; justify-content: space-around;">
+                    <a href="https://krpharr.github.io/pharr-phaster-racing/">Live App</a>
+                    <a href="https://github.com/krpharr/pharr-phaster-racing">GitHub Repository</a>
+                </div>
             </div>
 
         </div>
@@ -107,28 +142,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script>
-        // $(document).ready(function() {
-        console.log($(".carocontainer")[0].offsetHeight);
-        // });
-        $('.sidenav').sidenav();
+        $(document).ready(function() {
+            // console.log($(".carocontainer")[0].offsetHeight);
 
-        function initCarousel() {
-            let h = $(".carocontainer")[0].offsetHeight;
+            $('.sidenav').sidenav();
 
-            $('.carousel.carousel-slider').carousel({
-                fullWidth: true,
-                indicators: true
-            }).height(`${h}px`);
-        }
+            function initCarousel() {
+                let h = $(".carocontainer")[0].offsetHeight;
 
-        $(window).resize(function() {
+                $('.carousel.carousel-slider').carousel({
+                    fullWidth: true,
+                    indicators: true
+                }).height(`${h}px`);
+            }
+
+            $(window).resize(function() {
+                initCarousel();
+
+            });
+
             initCarousel();
 
+            // $(window).resize();
         });
-
-        initCarousel();
-
-        // $(window).resize();
     </script>
 
 </body>
