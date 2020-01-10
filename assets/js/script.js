@@ -1,17 +1,10 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     var elems = document.querySelectorAll('.sidenav');
-//     var instances = M.Sidenav.init(elems, options);
-// });
+autoplay();
 
-// // Or with jQuery
+function autoplay() {
+    $('.carousel').carousel('next');
+    setTimeout(autoplay, 10000);
+}
 
 $(document).ready(function() {
     $('.sidenav').sidenav();
 });
-
-
-
-// let l = {
-//     key1: value1,
-//     key2: value2
-// }
