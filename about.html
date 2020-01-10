@@ -9,53 +9,19 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Document</title>
-    <style>
-        header h3 {
-            margin: 0;
-        }
-        
-        .headshot-card {
-            /* position: fixed; */
-            /* z-index: 100; */
-            /* top: 4px; */
-            /* left: 4px; */
-            background-image: url("assets/images/headshot.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center top;
-            width: 80px;
-            height: 80px;
-            overflow: hidden;
-            border-radius: 50%;
-            /* margin: 16px 8px; */
-        }
-        
-        .headshot {
-            width: 80px;
-        }
-        
-        .bio {
-            font-size: 12px;
-            color: #000000;
-            margin: 0;
-            padding: 0 8px;
-        }
-        
-        .row {
-            margin: 0 0 12px;
-        }
-    </style>
+    <link href="assets/css/about.css" rel="stylesheet">
+    <title>Randall Pharr - About</title>
+
 </head>
 
 <body>
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper black">
-                <a href="#!" class="brand-logo black-text"></a>
+                <a href="#!" class="brand-logo white-text">About</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down black-text">
-                    <li><a class="white-text" href="carousel.html">Portfolio</a></li>
+                    <li><a class="white-text" href="index.html">Portfolio</a></li>
                     <li><a class="white-text" target="_blank" href="https://github.com/krpharr">GitHub</a></li>
                     <li><a class="white-text" target="_blank" href="https://www.linkedin.com/in/kennon-p-064994190/">LinkedIn</a></li>
                     <li><a class="white-text" href="About.html">About</a></li>
@@ -64,55 +30,84 @@
         </nav>
     </div>
     <ul class="sidenav" id="mobile-demo">
-        <li><a class="black-text" href="carousel.html">Portfolio</a></li>
+        <li><a class="black-text" href="index.html">Portfolio</a></li>
         <li><a class="black-text" target="_blank" href="https://github.com/krpharr">GitHub</a></li>
         <li><a class="black-text" target="_blank" href="https://www.linkedin.com/in/kennon-p-064994190/">LinkedIn</a></li>
         <li><a href="about.html">About</a></li>
     </ul>
+    <main>
+        <div class="bio">
+            <header>
+                <div class="row" style="display:flex; justify-content: space-around; align-items: center;">
 
-    <header>
-        <div class="row" style="display:flex; justify-content: space-around; align-items: center;">
+                    <div class="card headshot-card">
+                        <img src="assets/images/headshot.jpg" class="headshot">
+                    </div>
 
-            <div class="card headshot-card">
-                <img src="assets/images/headshot.jpg" class="headshot">
+                    <div>
+                        <h3>Randall Pharr</h3>
+
+                    </div>
+
+                </div>
+            </header>
+
+
+            <div class="row" style="display:flex; justify-content: space-around;">
+                <a href="">LinkedIn</a>
+                <a href="">GitHub</a>
+                <a href="">Resume</a>
+                <a href="">Email</a>
+                <a href="">Phone</a>
             </div>
 
-            <div>
-                <h3>Randall Pharr</h3>
 
-            </div>
+            <p>
+                Born on Titan, the second moon of Saturn, and unwittingly brought to earth by an accident with a wormhole, I was adopted and raised by a pack of wolves in the mountains of southwest Virginia. After a chance encounter with interstellar jazz musicians in
+                my early teens, I gleaned my means of escape and prospects of living my life as a musician.
+            </p>
+            <p>
+                From 1988 to 1992, I attended the Jazz Studies program at Virginia Commonwealth Univerisity and did well in music but failed miserably at college because wolves know nothing of higher education. Through my professional experience I was hired by Virginia
+                Commonwealth Univerisity in 2005 to teach upright and electric jazz bass, jazz improvisation, and small jazz ensembles. In addition, I was hired in 2011 to teach jazz bass at the University of Richmond.
 
+            </p>
+            <p>
+                Another lifelong passion of mine has been tinkering with computer languages. I played with Basic in my early teens on a Commodore Vic 20 and picked back up in my twenties with C and C++ and then again in my early forties with Python. After 30 years of
+                working self-employed as a professional musician including the last 14 years part-time adjunct faculty, I am working on strengthening my skills in computer languages and gaining the education and experience needed in the vast industry
+                to diversify my employment opportunities.
+
+            </p>
         </div>
-    </header>
 
 
-    <div class="row" style="display:flex; justify-content: space-around;">
-        <a href="">LinkedIn</a>
-        <a href="">GitHub</a>
-        <a href="">Resume</a>
-        <a href="">Email</a>
-        <a href="">Phone</a>
-    </div>
 
-    <div class="bio">
-        <p>
-            Born on Titan, the second moon of Saturn, and unwittingly brought to earth by an accident with a wormhole, I was adopted and raised by a pack of wolves in the mountains of southwest Virginia. After a chance encounter with interstellar jazz musicians in
-            my early teens, I gleaned my means of escape and prospects of living my life as a musician.
-        </p>
-        <p>
-            From 1988 to 1992, I attended the Jazz Studies program at Virginia Commonwealth Univerisity and did well in music but failed miserably at college because wolves know nothing of higher education. Through my professional experience I was hired by Virginia
-            Commonwealth Univerisity in 2005 to teach upright and electric jazz bass, jazz improvisation, and small jazz ensembles. In addition, I was hired in 2011 to teach jazz bass at the University of Richmond.
+    </main>
 
-        </p>
-        <p>
-            Another lifelong passion of mine has been tinkering with computer languages. I played with Basic in my early teens on a Commodore Vic 20 and picked back up in my twenties with C and C++ and then again in my early forties with Python. After 30 years of
-            working self-employed as a professional musician including the last 14 years part-time adjunct faculty, I am working on strengthening my skills in computer languages and gaining the education and experience needed in the vast industry to diversify
-            my employment opportunities.
-
-        </p>
-    </div>
-
-
+    <footer class="page-footer black">
+        <!-- <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020
+                <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+            </div>
+        </div>
+    </footer>
 
 
 

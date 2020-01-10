@@ -9,83 +9,97 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Randall Pharr - Portfolio</title>
+    <style>
 
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <title>Document</title>
+    </style>
 </head>
 
 <body>
+
     <div class="navbar-fixed">
         <nav>
-            <div class="nav-wrapper white">
-                <a href="#!" class="brand-logo black-text">Kennon Randall Pharr</a>
+            <div class="nav-wrapper black">
+                <a href="#!" class="brand-logo white-text">Randall Pharr</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down black-text">
-                    <li><a class="black-text" href="About.html">About</a></li>
+                    <li><a class="white-text" target="_blank" href="https://github.com/krpharr">GitHub</a></li>
+                    <li><a class="white-text" target="_blank" href="https://www.linkedin.com/in/kennon-p-064994190/">LinkedIn</a></li>
+                    <li><a class="white-text" href="About.html">About</a></li>
                 </ul>
             </div>
         </nav>
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="about.html">About</a></li>
-        </ul>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a class="black-text" target="_blank" href="https://github.com/krpharr">GitHub</a></li>
+        <li><a class="black-text" target="_blank" href="https://www.linkedin.com/in/kennon-p-064994190/">LinkedIn</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div class="row carocontainer">
+        <div class="carousel carousel-slider center">
+            <div class="carousel-item white-text" href="#one!">
+                <h2>Box-Office Depot</h2>
+                <img src="assets/images/Screen Shot 2020-01-07 at 11.42.42 PM.png">
+                <p class="white-text description">Are you tired of Netflix and Chilling? Browse current top rated movies, coming soon, and now playing to find local showtimes and theaters.</p>
+                <div style="display: flex; justify-content: space-around;">
+                    <a href="https://krpharr.github.io/box-office-depot/">Live App</a>
+                    <a href="https://github.com/krpharr/box-office-depot">GitHub Repository</a>
+                </div>
+            </div>
+            <div class="carousel-item white-text" href="#two!">
+                <h2>Weather Dashboard</h2>
+                <img src="assets/images/wd.png">
+                <p class="white-text description">Lookup current conditions and 5-day forcast for any city in the world. Saved searches update currnt conditions every five minutes.</p>
+                <div style="display: flex; justify-content: space-around;">
+                    <a href="https://krpharr.github.io/weather-dashboard/">Live App</a>
+                    <a href="https://github.com/krpharr/weather-dashboard">GitHub Repository</a>
+                </div>
+            </div>
+            <div class="carousel-item white-text" href="#three!">
+                <h2>Code-Shotgun</h2>
+                <img src="assets/images/start.png">
+                <p class="white-text description">Put your full-stack coding knowlegde to the test with Code-Shotgun.</p>
+                <div style="display: flex; justify-content: space-around;">
+                    <a href="https://krpharr.github.io/coding-shotgun/">Live App</a>
+                    <a href="https://github.com/krpharr/coding-shotgun">GitHub Repository</a>
+                </div>
+            </div>
+            <div class="carousel-item white-text" href="#three!">
+                <h2>Pharr Phaster Racing</h2>
+                <img src="assets/images/pharr-phaster-racing.png">
+                <p class="white-text description">Because my dad's race car needs a website.</p>
+                <div style="display: flex; justify-content: space-around;">
+                    <a href="https://krpharr.github.io/pharr-phaster-racing/">Live App</a>
+                    <a href="https://github.com/krpharr/pharr-phaster-racing">GitHub Repository</a>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-    <header>
-
-    </header>
-
-    <!-- Image by <a href="https://pixabay.com/users/ElisaRiva-1348268/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2468063">ElisaRiva</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2468063">Pixabay</a> -->
-
-
-    <main>
-
-
-        <div class="row project-row">
-            <div class="carousel carousel-slider">
-                <div class="carousel-fixed-item center">
-                    <a class="btn waves-effect white grey-text darken-text-2">button</a>
-                </div>
-                <div class="carousel-item red white-text" href="#one!">
-                    <img src="assets/images/Screen Shot 2020-01-07 at 11.42.42 PM.png">
-                </div>
-                <div class="carousel-item amber white-text" href="#two!">
-                    <h2>Second Panel</h2>
-                    <p class="white-text">This is your second panel</p>
-                </div>
-                <div class="carousel-item green white-text" href="#three!">
-                    <h2>Third Panel</h2>
-                    <p class="white-text">This is your third panel</p>
-                </div>
-                <div class="carousel-item blue white-text" href="#four!">
-                    <h2>Fourth Panel</h2>
-                    <p class="white-text">This is your fourth panel</p>
-                </div>
-            </div>
-        </div>
-    </main>
-
-
-
-    <footer class="page-footer white black-text">
-        <div class="footer-copyright white black-text">
-            <div class="container">
-                © 2014 Copyright Text
-                <a class="grey-text right" href="#!">More Links</a>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <script src="assets/js/script.js"></script>
-
     <script>
-        $('.carousel.carousel-slider').carousel({
-            fullWidth: false,
-            indicators: true
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+
+            function initCarousel() {
+                let h = $(".carocontainer")[0].offsetHeight;
+
+                $('.carousel.carousel-slider').carousel({
+                    fullWidth: true,
+                    indicators: true
+                }).height(`${h}px`);
+            }
+
+            $(window).resize(function() {
+                initCarousel();
+
+            });
+
+            initCarousel();
         });
     </script>
 
