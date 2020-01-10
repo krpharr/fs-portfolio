@@ -9,6 +9,7 @@ body {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: contain;
+    padding-top: 10%;
 }
 
 .carousel-item img {
@@ -57,12 +58,18 @@ body {
 }
 
 @media only screen and (min-width: 416) {
+    .carousel-item {
+        padding-top: 0!important;
+    }
     .carousel-item img {
         width: 400!important;
     }
 }
 
 @media only screen and (min-width: 640px) {
+    .carousel-item {
+        padding-top: 0!important;
+    }
     .carousel-item img {
         width: 600px!important;
     }
