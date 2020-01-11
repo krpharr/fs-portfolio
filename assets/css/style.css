@@ -5,11 +5,19 @@ body {
     min-width: 320px;
 }
 
+.brand-logo {
+    display: none;
+}
+
+.name {
+    display: none!important;
+}
+
 .carousel-item {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: contain;
-    padding-top: 10%;
+    padding-top: 10%!important;
 }
 
 .carousel-item img {
@@ -32,7 +40,16 @@ body {
     margin: 0;
 }
 
-.headshot-card {
+.githublinks {
+    padding: 0 8px;
+}
+
+.githublinks:last-child {
+    border-left: 1px solid;
+}
+
+
+/* .headshot-card {
     position: fixed;
     z-index: 100;
     top: 4px;
@@ -49,7 +66,7 @@ body {
 
 .headshot {
     width: 80px;
-}
+} */
 
 @media only screen and (max-width: 340px) {
     .brand-logo {
@@ -76,7 +93,25 @@ body {
 }
 
 @media only screen and (min-width: 993px) {
+    .name {
+        display: block!important;
+        margin-left: 32px!important;
+    }
+    .right {
+        margin-right: 32px!important;
+    }
     .brand-logo {
-        margin-left: 32px;
+        display: block;
+    }
+    .description {
+        font-size: 16px!important;
+        padding: 8px;
+        margin: 0 20%;
+    }
+    .carousel-item {
+        padding-top: 0!important;
+    }
+    .carousel-item h2 {
+        margin: 16px 0 8px;
     }
 }

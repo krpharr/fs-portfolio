@@ -4,6 +4,10 @@ body {
     flex-direction: column;
 }
 
+.name {
+    display: none!important;
+}
+
 main {
     flex: 1 0 auto;
 }
@@ -63,5 +67,11 @@ header h3 {
 @media only screen and (min-width: 993px) {
     .brand-logo {
         margin-left: 32px!important;
+    }
+    .right {
+        margin-right: 32px!important;
+    }
+    .name {
+        display: block!important;
     }
 }
