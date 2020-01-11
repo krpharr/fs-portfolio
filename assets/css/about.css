@@ -1,10 +1,21 @@
+/* * {
+    border: 1px solid lightblue;
+} */
+
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-image: url("../images/natural_paper/natural_paper.png");
+    background-repeat: repeat;
 }
 
-.name {
+
+/* .name {
+    display: none!important;
+} */
+
+.brand-logo {
     display: none!important;
 }
 
@@ -12,8 +23,38 @@ main {
     flex: 1 0 auto;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 header h3 {
     margin: 0;
+}
+
+.contact-div {
+    margin: 16px 0 0!important;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-div h3 {
+    margin: 0;
+}
+
+.contact-info {
+    margin: 0!important;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 12px 4px 0;
 }
 
 .headshot-card {
@@ -43,6 +84,10 @@ header h3 {
     padding: 0 8px;
 }
 
+p:first-child {
+    margin-top: 0;
+}
+
 .row {
     margin: 0 0 12px;
 }
@@ -50,14 +95,12 @@ header h3 {
 @media only screen and (max-width: 340px) {}
 
 @media only screen and (min-width: 416) {
-    header,
     .bio {
         margin: 0 32px;
     }
 }
 
 @media only screen and (min-width: 640px) {
-    header,
     .bio {
         margin: 0 80px;
         font-size: 24px;
@@ -71,7 +114,42 @@ header h3 {
     .right {
         margin-right: 32px!important;
     }
-    .name {
+    /* .name {
         display: block!important;
+    } */
+    .container {
+        margin-top: 16px;
+        flex-direction: row;
+        justify-content: flex-start!important;
+    }
+    .contact-div {
+        padding-top: 16px;
+        margin-right: 16px;
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start!important;
+    }
+    .contact-div h3 {
+        margin: 8px 0;
+        white-space: nowrap;
+    }
+    .contact-info {
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .headshot-card {
+        width: 250px;
+        height: 250px;
+    }
+    .headshot {
+        width: 250px;
+    }
+    .bio {
+        margin: 0;
+        padding: 16px;
+        font-size: 24px;
     }
 }

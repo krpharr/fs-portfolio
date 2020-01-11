@@ -25,17 +25,17 @@
                 <a href="#!" class="brand-logo center white-text page">Portfolio</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down black-text">
-                    <li><a class="white-text" target="_blank" href="https://github.com/krpharr">GitHub</a></li>
-                    <li><a class="white-text" target="_blank" href="https://www.linkedin.com/in/kennon-p-064994190/">LinkedIn</a></li>
                     <li><a class="white-text" href="About.html">About</a></li>
+                    <li><a class="white-text" target="_blank" href="https://www.linkedin.com/in/kennon-p-064994190/">LinkedIn</a></li>
+                    <li><a class="white-text" target="_blank" href="https://github.com/krpharr">GitHub</a></li>
                 </ul>
             </div>
         </nav>
     </div>
     <ul class="sidenav" id="mobile-demo">
-        <li><a class="black-text" target="_blank" href="https://github.com/krpharr">GitHub</a></li>
-        <li><a class="black-text" target="_blank" href="https://www.linkedin.com/in/kennon-p-064994190/">LinkedIn</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a class="black-text" target="_blank" href="https://www.linkedin.com/in/kennon-p-064994190/">LinkedIn</a></li>
+        <li><a class="black-text" target="_blank" href="https://github.com/krpharr">GitHub</a></li>
     </ul>
 
     <div class="row carocontainer">
@@ -81,37 +81,7 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $('.sidenav').sidenav();
-
-            var interval;
-
-            function initCarousel() {
-                let h = $(".carocontainer")[0].offsetHeight;
-
-                $('.carousel.carousel-slider').carousel({
-                    // onCycleTo: function(ele) {
-                    //     clearInterval(interval);
-                    //     interval = setInterval(function() {
-                    //         $('.carousel.carousel-slider').carousel('next');
-                    //     }, 10000);
-                    // },
-                    fullWidth: true,
-                    indicators: true
-                }).height(`${h}px`);
-            }
-
-            $(window).resize(function() {
-                initCarousel();
-
-            });
-
-            initCarousel();
-
-        });
-    </script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 
