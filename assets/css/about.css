@@ -1,7 +1,3 @@
-/* * {
-    border: 1px solid lightblue;
-} */
-
 body {
     display: flex;
     min-height: 100vh;
@@ -9,11 +5,6 @@ body {
     background-image: url("../images/natural_paper/natural_paper.png");
     background-repeat: repeat;
 }
-
-
-/* .name {
-    display: none!important;
-} */
 
 .brand-logo {
     display: none!important;
@@ -58,10 +49,6 @@ header h3 {
 }
 
 .headshot-card {
-    /* position: fixed; */
-    /* z-index: 100; */
-    /* top: 4px; */
-    /* left: 4px; */
     background-image: url("../images/headshot.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -70,7 +57,6 @@ header h3 {
     height: 80px;
     overflow: hidden;
     border-radius: 50%;
-    /* margin: 16px 8px; */
 }
 
 .headshot {
@@ -105,7 +91,6 @@ p:first-child {
 
 @media only screen and (min-width: 640px) {
     .bio {
-        /* margin: 0 80px; */
         font-size: 24px;
     }
 }
@@ -117,9 +102,6 @@ p:first-child {
     .right {
         margin-right: 32px!important;
     }
-    /* .name {
-        display: block!important;
-    } */
     .container {
         margin-top: 16px;
         flex-direction: row;
